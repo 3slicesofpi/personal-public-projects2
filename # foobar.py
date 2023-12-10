@@ -10,17 +10,16 @@ def extendlist(targetLen,raw):
         raw.append(curLen)
     return sorted(raw)
 
-extendlist(1000,raw)
+extendlist(16,raw)
 
 def foobar(format,raw):
     for x in raw:
-        mod3 = x % 3
-        if mod3 == 0:
+        if (x % 3) == 0:
             mod3Exist = "foo"
         else:
             mod3Exist = ""
-        mod5 = x % 5
-        if mod5 == 0:
+
+        if (x % 5) == 0:
             mod5Exist = "bar"
         else:
             mod5Exist = ""
